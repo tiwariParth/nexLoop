@@ -1,5 +1,5 @@
 import React from "react";
-import { VStack, HStack, Heading, Text, Button } from "@chakra-ui/react";
+import { HStack, Heading, Text, Button } from "@chakra-ui/react";
 
 const NavBar = () => {
   return (
@@ -17,7 +17,12 @@ const NavBar = () => {
         </Text>
       </Heading>
 
-      <Button borderRadius={"30px"}>Join the Community</Button>
+      <Button borderRadius={"30px"} py={"10px"} backgroundColor={"white"}>
+        Join the Community{" "}
+        <Text>
+          <ion-icon name="arrow-forward-outline"></ion-icon>{" "}
+        </Text>{" "}
+      </Button>
     </HStack>
   );
 };
